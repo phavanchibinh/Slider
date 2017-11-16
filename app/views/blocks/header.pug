@@ -1,0 +1,23 @@
+include ../mixins/all
+header
+ .slideshow(data-slider)
+  .mySlides.fade
+   ul
+    li
+     +img('slider1','images/s1.jpg')
+  .mySlides.fade
+   ul
+    li
+    +img('slider1','images/s2.jpg')
+  .mySlides.fade
+   ul
+    li
+    +img('slider1','images/s3.jpg')
+  a.prev 
+   i.fa.fa-chevron-left
+  a.next 
+   i.fa.fa-chevron-right
+  .thumbail 
+   .dot(onclick='currentSlide(1)')
+   .dot(onclick='currentSlide(2)')
+   .dot(onclick='currentSlide(3)')
